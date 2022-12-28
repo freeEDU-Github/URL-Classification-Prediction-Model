@@ -16,7 +16,7 @@ st.title('URL Classification Prediction Model')
 st.write(
           'This project aims to provide a comprehensive survey and a structural understanding of Malicious URL Detection techniques using machine learning. ')
 
-st.text("Kindly fill out all the input fields in order to see the results")
+st.write("You can test the sample data below")
 
 st.dataframe(data_sample)
 
