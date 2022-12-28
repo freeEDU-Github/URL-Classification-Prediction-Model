@@ -14,7 +14,7 @@ data_sample = pd.read_csv("importance.csv")
 #Text
 st.title('URL Classification Prediction Model')
 st.write(
-          'This project aims to provide a comprehensive survey and a structural understanding of Malicious URL Detection techniques using machine learning. ')
+          'The main objective of this project is to thoroughly examine and understand the various techniques for detecting malicious URLs using machine learning. These techniques will be used to predict whether a given URL is benign, related to defacement, malware, phishing, or spam.')
 
 st.write("You can test the sample data below")
 
