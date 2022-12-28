@@ -13,21 +13,21 @@ data_sample = pd.read_csv("importance.csv")
 
 #Text
 st.title('URL Classification Prediction Model')
-st.header(
+st.write(
           'This project aims to provide a comprehensive survey and a structural understanding of Malicious URL Detection techniques using machine learning. ')
 
 st.text("Kindly fill out all the input fields in order to see the results")
 
 st.dataframe(data_sample)
 
-path_token_count = st.number_input("Path Token Count")
-average_domain_token = st.number_input("Average Domain Token")
-entropy_url = st.number_input("Entropy URL")
-charcompvowels = st.number_input("Charcomp Vowels")
-charcompace = st.number_input("Charcomp Ace")
-path_url_ratio = st.number_input("Path Url Ratio")
-domain_url_ratio = st.number_input("Domain URL Ratio")
-symbol_count_url = st.number_input("Symbol Count URL")
+path_token_count = st.number_input("Path Token Count", step=1e-5, format="%.4f")
+average_domain_token = st.number_input("Average Domain Token", step=1e-5, format="%.4f")
+entropy_url = st.number_input("Entropy URL", step=1e-5, format="%.4f")
+charcompvowels = st.number_input("Charcomp Vowels", step=1e-5, format="%.4f")
+charcompace = st.number_input("Charcomp Ace", step=1e-5, format="%.4f")
+path_url_ratio = st.number_input("Path Url Ratio", step=1e-5, format="%.4f")
+domain_url_ratio = st.number_input("Domain URL Ratio", step=1e-5, format="%.4f")
+symbol_count_url = st.number_input("Symbol Count URL", step=1e-5, format="%.4f")
 
 features = ['path_token_count', 'average_domain_token', 'entropy_url', 'charcompvowels', 'charcompace', 'path_url_ratio', 'domain_url_ratio', 'symbol_count_url']
 
